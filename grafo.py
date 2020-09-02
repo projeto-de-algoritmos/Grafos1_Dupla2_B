@@ -16,17 +16,14 @@ class Graph(object):
 
     def vertices(self):
         """ returns the vertices of a graph """
-        print('1')
         return list(self.__graph_dict.keys())
         
 
     def edges(self):
-        print('2')
         """ returns the edges of a graph """
         return self.__generate_edges()
 
     def add_vertex(self, vertex):
-        print('3')
         """ If the vertex "vertex" is not in 
             self.__graph_dict, a key "vertex" with an empty
             list as a value is added to the dictionary. 
@@ -36,7 +33,6 @@ class Graph(object):
             self.__graph_dict[vertex] = []
 
     def add_edge(self, edge):
-        print('4')
         """ assumes that edge is of type set, tuple or list; 
             between two vertices can be multiple edges! 
         """
@@ -48,7 +44,6 @@ class Graph(object):
             self.__graph_dict[vertex1] = [vertex2]
 
     def __generate_edges(self):
-        print('5')
         """ A static method generating the edges of the 
             graph "graph". Edges are represented as sets 
             with one (a loop back to the vertex) or two 
@@ -65,7 +60,6 @@ class Graph(object):
         return edges
 
     def __str__(self):
-        print('6')
         res = "vertices: "
         for k in self.__graph_dict:
             res += str(k) + " "

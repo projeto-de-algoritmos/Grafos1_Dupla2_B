@@ -1,12 +1,14 @@
 import collections
 
 def main(graph, root): 
-    visited, queue = set(), collections.deque([root])
-    while queue: 
-        print(queue)
-        vertex = queue.popleft()
+    visitado, lista = set(), collections.deque([root])
+    fofocado = []
+    while lista: 
+        print(lista)
+        vertex = lista.popleft()
         
-        for neighbour in graph[vertex]: 
-            if neighbour not in visited: 
-                visited.add(neighbour) 
-                queue.append(neighbour) 
+        for vizinho in graph[vertex]: 
+            if vizinho not in visitado:
+                fofocado.append(vizinho)
+                visitado.add(vizinho) 
+                lista.append(vizinho)

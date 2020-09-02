@@ -1,11 +1,18 @@
 import grafo
 import bfs
+import pickle
 
-h = { 0 : [1, 2],  ,
-      1 : [],
-      2 : [],  
-    }
+h = {}
+numnos = int(input('digite o numero de nós:\n'))
 
+for i in range(0,numnos):
+  vizinho = list(input('indique os vizinhos de ' + str(i) + ':'))
+  print(vizinho)
+  h[i] = vizinho
+
+print(h)
+# h = {0:[1, 2], 1:[3,4],2:[5],3:[],4:[],5:[]}
+ 
 graph = grafo.Graph(h)
 
 print("vertices:")
