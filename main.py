@@ -1,22 +1,21 @@
 import grafo
+import bfs
 
-
-g = { "a" : ["b", "c"],
-      "b" : ["a","d"],
-      "c" : ["a","e","f"],
-      "d" : ["b"],
-      "f" : ["c"],
-      "e" : ["c"],
+h = { 0 : [1, 2],  ,
+      1 : [],
+      2 : [],  
     }
 
+graph = grafo.Graph(h)
 
-graph = grafo.Graph(g)
-
-print("Vertices of graph:")
+print("vertices:")
 print(graph.vertices())
 
-print("Edges of graph:")
+print("arestas:")
 print(graph.edges())
+
+print("Fazer busca em largura")
+bfs.main(h, 0)
 
 ##print("Add vertex:")
 ##graph.add_vertex("z")
@@ -39,3 +38,6 @@ print(graph.edges())
 # print(graph.vertices())
 # print("Edges of graph:")
 # print(graph.edges())
+
+
+
