@@ -5,6 +5,7 @@ def main(graph, root):
     visitado, lista = set(), collections.deque([root])
 
     fofocado = []
+    fofocado.append(root)
     while lista: 
         print(lista)
         vertex = lista.popleft()
@@ -14,3 +15,6 @@ def main(graph, root):
                 fofocado.append(vizinho)
                 visitado.add(vizinho)
                 lista.append(vizinho)
+    return fofocado
+
+    
