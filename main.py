@@ -6,23 +6,26 @@ h = {}
 numnos = int(input('digite o numero de nós:\n'))
 
 for i in range(0,numnos):
-  vizinho = list(input('indique os vizinhos de ' + str(i) + ':'))
+  nomeno = input('digite o nome ou numero de nó ' + str(i) + ' : ')
+  vizinho = list(input('indique os vizinhos de ' + str(nomeno) + ' : '))
   print(vizinho)
-  h[i] = vizinho
+  h[str(nomeno)] = vizinho
 
 print(h)
-# h = {0:[1, 2], 1:[3,4],2:[5],3:[],4:[],5:[]}
+
+#teste = {0:[1, 2], 1:[3,4],2:[5],3:[],4:[],5:[]}
  
 graph = grafo.Graph(h)
 
-print("vertices:")
+print("esses sao os vertices do grafo:")
 print(graph.vertices())
 
-print("arestas:")
+print("essas sao as arestas do grafo:")
 print(graph.edges())
 
 print("Fazer busca em largura")
-bfs.main(h, 0)
+nobfs = input('digite o nó que quer que comece a busca:\n')
+bfs.main(h, nobfs)
 
 ##print("Add vertex:")
 ##graph.add_vertex("z")
