@@ -5,11 +5,12 @@ import gerador_aleatorio
 
 
 #teste = {0:[1, 2], 1:[3,4],2:[5],3:[],4:[],5:[]}
+
 def print_menu():
     print(30 * "-" , "MENU" , 30 * "-")
     print("1. Criar grafo inserindo os nós manualmente")
     print("2. Criar grafo aleatorio")
-    print("3. Mostrar vertices e arestas do grafo")
+    print("3. Mostrar informações do grafo")
     print("4. Espalhar fofoca pela cidade")
     print("5. Sair")
     print(67 * "-")
@@ -29,10 +30,13 @@ if __name__ == '__main__':
             print("Opcao 2 foi escolhida")
             print("voce deve digitar o numero de pessoas da cidade: (obs: numero recomendado no maximo 30000)\n")
             numnos = int(input('Digite o numero de pessoas:'))
-            h = gerador_aleatorio.main(numnos)
+            nummaxvizinhos = int(input('Digite o numero maximo de vizinhos de cada pessoa:'))
+            h = gerador_aleatorio.main(numnos, nummaxvizinhos)            
         elif choice=='3':
             print("Opcao 3 foi escolhida")
             graph = grafo.Graph(h)
+            print("este é seu grafo:")
+            print(h)
             print("esses sao os vertices do grafo:")
             print(graph.vertices())
             vertices = graph.vertices()
@@ -50,10 +54,6 @@ if __name__ == '__main__':
             loop=False
         else:
             input("Opcao incorreta. Aperte qualquer tecla para tentar novamente..")
-
-
-
-
 
 # if(fofocado == vertices):
 #   print('toda a cidade sabe da fofoca')

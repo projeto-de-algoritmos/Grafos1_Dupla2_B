@@ -1,7 +1,7 @@
 import collections
 
 def main(graph, root): 
-    #{0: ['1', '2'], 1: [], 2: []}
+
     visitado, lista = set(), collections.deque([root])
 
     fofocado = []
