@@ -1,9 +1,8 @@
 import random
 
-def geradorNumeroAleatorio(maximo) :
+def main(maximo) :
     lis = []
     while len(lis) < maximo:
-        #This checks to see if there are duplicate numbers
         r = random.randint(1,maximo)
         if r not in lis :
             lis.append(r)
