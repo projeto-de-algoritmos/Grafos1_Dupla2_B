@@ -6,7 +6,7 @@ def main():
 
     for i in range(0,numnos):
 
-        nomeno = input('represente a pessoa por um nome ou numero:' + str(i) + ' :')
+        nomeno = input('represente a pessoa por um nome ou numero ' + str(i) + ' :')
         numvizinhos = int(input('digite o numero de vizinhos do ' + str(nomeno) + ' :' ))
 
         for j in range(0,numvizinhos):

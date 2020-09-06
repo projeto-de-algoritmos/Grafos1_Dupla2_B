@@ -1,4 +1,5 @@
 import collections
+import grafo
 
 def main(graph, root): 
 
@@ -18,3 +19,13 @@ def main(graph, root):
     return fofocado
 
     
+def investigarcidade(h, fofocado):
+    graph = grafo.Graph(h)
+    nos = graph.vertices()
+    tamanhografo = nos.__len__()
+    tamanhofofocado = fofocado.__len__()
+
+    if tamanhografo == tamanhofofocado:
+        print('A cidade inteira já sabe da fofoca')
+    else:
+        print('nem todos da cidade sabem da fofoca')

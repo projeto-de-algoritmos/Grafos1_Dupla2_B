@@ -12,7 +12,8 @@ def print_menu():
     print("2. Criar grafo aleatorio")
     print("3. Mostrar informações do grafo")
     print("4. Espalhar fofoca pela cidade")
-    print("5. Sair")
+    print("5. Investigar se toda cidade sabe da fofoca")
+    print("6. Sair")
     print(67 * "-")
   
 
@@ -50,15 +51,14 @@ if __name__ == '__main__':
             fofocado = bfs.main(h, nobfs)
         elif choice=='5':
             print("Opcao 5 foi escolhida")
+            bfs.investigarcidade(h, fofocado)
+        elif choice=='6':
+            print("Opcao 6 foi escolhida")
             print('Saindo....')
             loop=False
+
         else:
             input("Opcao incorreta. Aperte qualquer tecla para tentar novamente..")
-
-# if(fofocado == vertices):
-#   print('toda a cidade sabe da fofoca')
-# else:
-#   print('nem todos da cidade sabem da fofoca')
 
 ##print("Add vertex:")
 ##graph.add_vertex("z")
