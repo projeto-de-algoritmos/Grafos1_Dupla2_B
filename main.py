@@ -10,7 +10,7 @@ def print_menu():
     print(30 * "-" , "MENU" , 30 * "-")
     print("1. Criar grafo de cidade inserindo os nós manualmente")
     print("2. Criar grafo de cidade aleatoriamente")
-    print("3. Mostrar informações do grafo")
+    print("3. Mostrar informações do grafo") 
     print("4. Espalhar fofoca pela cidade")
     print("5. Investigar se toda cidade sabe da fofoca")
     print("6. Sair")
