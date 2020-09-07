@@ -8,8 +8,8 @@ import gerador_aleatorio
 
 def print_menu():
     print(30 * "-" , "MENU" , 30 * "-")
-    print("1. Criar grafo inserindo os nós manualmente")
-    print("2. Criar grafo aleatorio")
+    print("1. Criar grafo de cidade inserindo os nós manualmente")
+    print("2. Criar grafo de cidade aleatoriamente")
     print("3. Mostrar informações do grafo")
     print("4. Espalhar fofoca pela cidade")
     print("5. Investigar se toda cidade sabe da fofoca")
@@ -31,7 +31,7 @@ if __name__ == '__main__':
             print("Opcao 2 foi escolhida")
             print("voce deve digitar o numero de pessoas da cidade: (obs: numero recomendado no maximo 30000)\n")
             numnos = int(input('Digite o numero de pessoas:'))
-            nummaxvizinhos = int(input('Digite o numero maximo de vizinhos de cada pessoa:'))
+            nummaxvizinhos = int(input('Digite o numero maximo de conhecidos de cada pessoa:'))
             h = gerador_aleatorio.main(numnos, nummaxvizinhos)            
         elif choice=='3':
             print("Opcao 3 foi escolhida")
