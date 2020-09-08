@@ -13,7 +13,14 @@
 O projeto é um espalhador de fofocas para uma cidade, o usuário deve montar um grafo de uma cidade com as opções no menu, depois pode: mostrar informações do grafo,  espalhar fofoca para a cidade e verificarse aa cidade sabe da fofoca.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
+
+![inserindoGrafo](./assets/inserindo_grafo.png)
+
+![informações_grafo](./assets/informações_grafo.png)
+
+![espalharfofoca](./assets/espalhar_fofoca.png)
+
+![investigarcidade](./assets/investigar_cidade.png)
 
 ## Instalação 
 **Linguagem**: Python
@@ -31,6 +38,5 @@ siga as intruções do termial
 
 ## Vídeo
 
-
-## Outros 
+O video está no arquivo video.mkv.zip
 
